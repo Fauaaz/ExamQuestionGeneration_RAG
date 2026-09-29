@@ -1,13 +1,9 @@
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
-from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.messages import HumanMessage, SystemMessage
 from huggingface_hub import login
 from langchain_ollama import ChatOllama
-
-
-login()  # You will be prompted for your HF key, which will then be saved locally
 
 
 load_dotenv()
