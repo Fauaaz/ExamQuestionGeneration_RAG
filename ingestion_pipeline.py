@@ -25,6 +25,7 @@ def load_documents(docs_path="docs"):
         loader_cls= PyPDFLoader      
     )  
     
+    
     documents = loader.load()
     
     if len(documents) == 0:
